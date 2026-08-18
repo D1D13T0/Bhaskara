@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="Bhaskara.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+           Padding="30,0"
+           Spacing="25">
+
+            <Image Source="bhaskaraf.png"
+                  HeightRequest="150"
+                  HorizontalOptions="Center"
+                  Aspect="AspectFit"/>
+
+            <Label Text="Bhaskara" FontSize="Large"/>
+
+            <Label Text="A (coeficiente quadrático)" FontSize="Medium"/>
+            <Entry x:Name="valorA" Placeholder="Digite o valor de A" Keyboard="Numeric"/>
+
+            <Label Text="B (coeficiente linear)" FontSize="Medium"/>
+            <Entry x:Name="valorB" Placeholder="Digite o valor de B" Keyboard="Numeric"/>
+
+            <Label Text="C (constante)" FontSize="Medium"/>
+            <Entry x:Name="valorC" Placeholder="Digite o valor de C" Keyboard="Numeric"/>
+
+            <Button Text="Calcular Raízes" Clicked="OnCalcularClicked"/>
+
+            <Label Text="Resultado" FontSize="Medium"/>
+            <Label x:Name="resultado" FontSize="Small"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
